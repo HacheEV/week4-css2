@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body, #app, #app > div{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.navbar{
+    display:flex;
+    background-color: #2E719D;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+    
+}
+.item_show{
+    position: relative;
+    width: auto;
+    display:inline;
+    list-style: none;
+    list-style-type: none;
+    margin: 25px;
+    padding: 10px;
+   
+}
+.item_hide{
+    position: relative;
+    width: auto;
+    display:block;
+    list-style: none;
+    list-style-type: none;
+    margin: 25px;
+    padding: 10px;
+   
+}
+.nav-item > a:hover{
+    position: relative;
+    width: auto;
+    color: #0ee8d6;
+    font-size: 25px;
+    display:inline;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: underline;
+    cursor: pointer;
+   
+}
+
+.item_show > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.item_hide > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.item_show > a :hover {
+    color: rgb(34, 228, 99);
+    font-size: 35px;
+    font-weight: bold;
+}
+.button-show{
+    position: relative;
+    box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:none;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px 1px 0px #528ecc;
+    
+}
+
+.button-hide {
+    
+    content: 'faArrowUp';
+    box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:none;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+
+}
+@media all  and (max-width: 820px ){
+    .navbar{
+        width: auto;
+        height: auto;
+        display: flex;
+       
+    }
+    .nav_block{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+
+        
+    }
+    .item_hide> a{
+        display: block;
+    }
+    .item_show> a{
+        display: none;
+    }
+    .button-hide{
+        display: inline;
+                
+    }
+    .button-show{
+        display: inline;
+        content:  '/f0aa';/*no me carga, verificar*/
+    }
+
+
+}
