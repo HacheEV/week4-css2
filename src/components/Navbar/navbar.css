@@ -124,7 +124,7 @@ html, body, #app, #app > div{
         display: none;
     }
     .button-hide{
-        display: inline;
+        display: none;
                 
     }
     .button-show{
